@@ -67,4 +67,4 @@ df2['V-'] = Vminus
 df2['V0'] = Vnaught
 df2['Vs'] = Vspin
 
-df2.to_csv("Isotope Information and Well Depths", index=False)
+df2.to_csv("Isotope Information and Well Depths.csv", index=False)
