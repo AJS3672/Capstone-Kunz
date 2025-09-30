@@ -42,7 +42,7 @@ df['-LHS'] = left_hand_values_minus
 
 #df.to_csv("Neutron Spins & Scattering Lengths - Sheet1 (2).csv", sep=',', index=False)
 
-df2 = pd.read_csv('H through Ca Neutron Spins & Scattering Lengths - Sheet1 (2) - Neutron Spins & Scattering Lengths - Sheet1 (2).csv', sep=',')
+df2 = pd.read_csv('Neutron Spins & Scattering Lengths with Solutions.csv', sep=',')
 
 Vplus = np.empty(len(df2['Isotope']))
 Vminus = np.empty(len(df2['Isotope']))
@@ -66,3 +66,5 @@ df2['V+'] = Vplus
 df2['V-'] = Vminus
 df2['V0'] = Vnaught
 df2['Vs'] = Vspin
+
+df2.to_csv("Isotope Information and Well Depths", index=False)
